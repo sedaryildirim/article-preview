@@ -6,7 +6,7 @@
     --cc-v-d-g-b-: hsl(217, 19%, 35%);
     --cc-d-d-b-: hsl(214, 17%, 51%);
     --cc-g-b-: hsl(212, 23%, 69%);
-    --c-l-g-b-: hsl(210, 46%, 95%);
+    --cc-l-g-b-: hsl(210, 46%, 95%);
 
     --ff-manrope-: 'Manrope', sans-serif;
 }
@@ -15,12 +15,23 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--ff-manrope-);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cc-v-d-g-b-);
+}
+
+body {
+    background-color: var(--cc-l-g-b-);
+    padding: 5em 2rem 5rem 2rem;
 }
 
 .container {
+    background-color: white;
+    border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -33,16 +44,48 @@
 .header-image {
     grid-area: header-image;
     content: url('../images/drawers.jpg');
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .header-text {
     grid-area: header-text;
+    padding: 2em 1rem 0rem 1rem;
+}
+
+.header-text > h1 {
+    font-weight: 800;
 }
 
 .paragraph-text {
     grid-area: paragraph-text;
+    padding: 1rem;
+}
+
+.paragraph-text > p {
+    color: var(--cc-g-b-);
 }
 
 .user-info {
     grid-area: user-info;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.user-image {
+    content: url('../images/avatar-michelle.jpg');
+    border-radius: 100px;
+    align-self: flex-start;
+    /* display: block; */
+    /* object-fit: cover; */
+    width: 50px;
+    max-height: auto;
 }
