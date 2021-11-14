@@ -1,0 +1,48 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* Root */
+:root {
+    --cc-v-d-g-b-: hsl(217, 19%, 35%);
+    --cc-d-d-b-: hsl(214, 17%, 51%);
+    --cc-g-b-: hsl(212, 23%, 69%);
+    --c-l-g-b-: hsl(210, 46%, 95%);
+
+    --ff-manrope-: 'Manrope', sans-serif;
+}
+
+/* Main */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header-image"
+    "header-text"
+    "paragraph-text"
+    "user-info";
+}
+
+.header-image {
+    grid-area: header-image;
+    content: url('../images/drawers.jpg');
+}
+
+.header-text {
+    grid-area: header-text;
+}
+
+.paragraph-text {
+    grid-area: paragraph-text;
+}
+
+.user-info {
+    grid-area: user-info;
+}
