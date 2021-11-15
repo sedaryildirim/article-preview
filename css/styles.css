@@ -107,3 +107,7 @@ body {
     width: 25px;
     max-height: 25px;
 }
+
+.share-info {
+    display: none;
+}
