@@ -7,7 +7,7 @@
     --cc-d-d-b-: hsl(214, 17%, 51%);
     --cc-g-b-: hsl(212, 23%, 69%);
     --cc-l-g-b-: hsl(210, 46%, 95%);
-
+    
     --ff-manrope-: 'Manrope', sans-serif;
 }
 
@@ -58,11 +58,12 @@ body {
 
 .header-text > h1 {
     font-weight: 800;
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 .paragraph-text {
     grid-area: paragraph-text;
-    padding: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .paragraph-text > p {
@@ -71,21 +72,38 @@ body {
 
 .user-info {
     grid-area: user-info;
-    padding: 1rem;
+    padding: 1rem 2rem 2rem 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
+.user-info > div > h1 {
+    font-weight: 800;
+    margin-left: -2rem;
+    font-size: 0.9rem;
+}
+
+.user-info > div > p {
+    font-weight: 400;    
+    margin-left: -2em;
+    font-size: 0.9rem;
+    color: var(--cc-d-d-b-);
+    
+}
 
 .user-image {
     content: url('../images/avatar-michelle.jpg');
     border-radius: 100px;
-    align-self: flex-start;
-    /* display: block; */
-    /* object-fit: cover; */
+    display: block;
     width: 50px;
     max-height: auto;
+}
+.share-image {
+    content: url('../images/icon-share.svg');
+    background-color: var(--cc-l-g-b-);
+    border-radius: 100px;
+    width: 25px;
+    max-height: 25px;
 }
