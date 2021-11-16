@@ -4,18 +4,17 @@ let shareIcon = document.getElementById('three');
 let shareIconTwo = document.getElementById('four');
 
 shareIcon.addEventListener('click', function(){
-   userInfo.style.display = "none";
-   shareInfo.style.display = "flex";
-   shareIcon.style.display = "none";
+      shareInfo.style.display = "flex"
+      userInfo.style.display = "none"
+      shareIcon.style.display = ""
 });
 
 shareIcon.addEventListener('click', function(){
    if (window.innerWidth > 800){
-      shareInfo.style.display = "none"
+      shareInfo.classList.toggle("show")
       userInfo.style.display = "flex"
       shareIcon.style.display = ""
    }
-
 });
 
 shareIconTwo.addEventListener('click', function(){

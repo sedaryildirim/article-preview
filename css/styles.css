@@ -185,12 +185,10 @@ body {
         display: inline-block;
         border-radius: 100px;
         box-shadow: 0px 0px 2px #888;
-        padding: 1em 1em;
-        margin-left: 4rem;
-        height: 30px;
+        padding: 0.5em 0.5em;
         outline: none;
     }
-    
+
 }
 
 @media (min-width: 1200px)
@@ -235,7 +233,7 @@ body {
         display: block;
         object-fit: cover;
     }
-
+    
     .user-image {
         content: url('../images/avatar-michelle.jpg');
         border-radius: 50px;
@@ -258,6 +256,56 @@ body {
         margin: 0;
         justify-self: flex-start;
     }
+    
+    .share-info {
+        position: absolute;
+        top: 480px;
+        right: 100px;
+        width: 300px;
+        background-color: var(--cc-v-d-g-b-);
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.8rem;
+        border-radius: 10px;
+        display: none;
+    }
+    .share-info::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: var(--cc-v-d-g-b-);
+        position: absolute;
+        bottom: -10px;
+        right: 100px;
+        transform: rotate(45deg);
+    }
+}
 
+@media (min-width: 1920px){
+    .share-info {
+        position: absolute;
+        top: 500px;
+        right: 200px;
+        width: 300px;
+        background-color: var(--cc-v-d-g-b-);
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.8rem;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .share-info::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: var(--cc-v-d-g-b-);
+        position: absolute;
+        bottom: -10px;
+        right: 150px;
+        transform: rotate(45deg);
+    }
 
 }
