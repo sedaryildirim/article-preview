@@ -79,16 +79,6 @@ body {
     align-items: center;
 }
 
-
-.user-info:active {
-    grid-area: user-info;
-    padding: 1rem 2rem 2rem 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .user-info > div > h1 {
     font-weight: 800;
     margin-left: -2rem;
@@ -105,24 +95,48 @@ body {
 .user-image {
     content: url('../images/avatar-michelle.jpg');
     border-radius: 100px;
-    display: block;
     width: 50px;
     max-height: auto;
+    margin-right: 1rem;
+    justify-self: flex-start;
+    
 }
-.share-image {
+.share-icon {
     content: url('../images/icon-share.svg');
-    background-color: var(--cc-l-g-b-);
-    border-radius: 100px;
-    width: 25px;
-    max-height: 25px;
+    cursor: pointer;
 }
 
 .share-info {
     display: none;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     background-color: var(--cc-v-d-g-b-);
+    border-radius: 0px 0px 20px 20px;
+    justify-content: flex-start;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-info > p {
+    color: white;
+    letter-spacing: 0.5rem;
 }
 
 .facebook-icon {
     content: url('../images/icon-facebook.svg');
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.twitter-icon {
+    content: url('../images/icon-twitter.svg');
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.pintrest-icon {
+    content: url('../images/icon-pinterest.svg');
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
 }
