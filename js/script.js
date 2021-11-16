@@ -1,14 +1,18 @@
 let userInfo = document.getElementById('one');
 let shareInfo = document.getElementById('two');
+let shareIcon = document.getElementById('three');
+let shareIconTwo = document.getElementById('four');
 
-userInfo.addEventListener('click', function(){
+shareIcon.addEventListener('click', function(){
    userInfo = document.getElementById('one').style.display = "none";
    shareInfo = document.getElementById('two').style.display = "flex";
+   shareIcon = document.getElementById('three').style.display = "none";
 });
 
-shareInfo.addEventListener('click', function(){
-   userInfo = document.getElementById('one').style.display = "";
+shareIconTwo.addEventListener('click', function(){
+   userInfo = document.getElementById('one').style.display = "flex";
    shareInfo = document.getElementById('two').style.display = "none";
+   shareIcon = document.getElementById('three').style.display = "";
 });
 
 
