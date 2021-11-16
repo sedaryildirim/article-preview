@@ -7,7 +7,7 @@ userInfo.addEventListener('click', function(){
 });
 
 shareInfo.addEventListener('click', function(){
-   userInfo = document.getElementById('one').style.display = "block";
+   userInfo = document.getElementById('one').style.display = "";
    shareInfo = document.getElementById('two').style.display = "none";
 });
 
