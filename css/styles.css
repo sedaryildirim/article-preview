@@ -165,18 +165,6 @@ body {
         margin-right: 4rem;
     }
     
-    .share-icon {
-        content: url('../images/icon-share.svg');
-        cursor: pointer;
-        background-color: var(--cc-l-g-b-);
-        display: inline-block;
-        border-radius: 100px;
-        box-shadow: 0px 0px 2px #888;
-        padding: 1em 1em;
-        margin-left: 4rem;
-        height: 30px;
-        outline: none;
-    }
     .user-info > div > h1 {
         font-weight: 800;
         font-size: 1.5rem;
@@ -189,6 +177,20 @@ body {
         color: var(--cc-d-d-b-);
         margin: 0;
     }
+    
+    .share-icon {
+        content: url('../images/icon-share.svg');
+        cursor: pointer;
+        background-color: var(--cc-l-g-b-);
+        display: inline-block;
+        border-radius: 100px;
+        box-shadow: 0px 0px 2px #888;
+        padding: 1em 1em;
+        margin-left: 4rem;
+        height: 30px;
+        outline: none;
+    }
+    
 }
 
 @media (min-width: 1200px)
@@ -206,19 +208,56 @@ body {
         display: table-cell;
         vertical-align: middle;
     }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        height: 40vh;
+    }
+    
+    .header-text > h1 {
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    
+    .paragraph-text > p {
+        padding: 0rem 1rem 0rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .header-image {
+        content: url('../images/drawers.jpg');
+        border-radius: 20px 0px 0px 20px;
+        width: 40%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
 
-   .container {
-       display: flex;
-       flex-direction: row;
-   }
+    .user-image {
+        content: url('../images/avatar-michelle.jpg');
+        border-radius: 50px;
+        width: 75px;
+        max-height: auto;
+        margin-right: 4rem;
+    }
+    
+    .user-info > div > h1 {
+        font-weight: 800;
+        font-size: 1rem;
+        margin: 0;
+        justify-content: center;
+    }
+    
+    .user-info > div > p {
+        font-weight: 400;    
+        font-size: 1rem;
+        color: var(--cc-d-d-b-);
+        margin: 0;
+        justify-self: flex-start;
+    }
 
-   .header-image {
-    content: url('../images/drawers.jpg');
-    border-radius: 20px 0px 0px 20px;
-    width: 40%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-      
+
 }
