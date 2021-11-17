@@ -24,6 +24,9 @@
 body {
     background-color: var(--cc-l-g-b-);
     padding: 5em 2rem 5rem 2rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .container {
@@ -159,9 +162,7 @@ body {
 {
     
     body {
-        display: grid;
-        justify-content: center;
-        align-content: center;
+        margin-top: 15%;
     }
     
     .user-info {
@@ -229,14 +230,6 @@ body {
     html {
         display: table;
         margin: auto;
-    }
-    
-    body {
-        display: table-cell;
-        vertical-align: middle;
-        display: grid;
-        justify-content: center;
-        align-content: center;
     }
     
     .container {
@@ -320,12 +313,6 @@ body {
 
 @media (min-width: 1920px)
 {
-    
-    body {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-    }
     
     .share-info {
         position: absolute;
