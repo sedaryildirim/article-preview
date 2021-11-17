@@ -16,8 +16,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -49,7 +47,13 @@ Users should be able to:
 
 ### What I learned
 
+Havent done any JS before today and found it quite tricky but managed to get it to work, a lot of code in css and i know it could be shorter, will have to tidy up code going forward, will look into better naming convetions (BEM) along with perhaps SCSS/SASS along with bootstrap library? 
+
+Responsiveness got me stuck on this mainly due to the JS pop up, have to figure out how to make that sticky / on hover on button click, hence why the css is so long.
+
 ### Continued development
+
+Better naming convetions with (BEM) & learn more JS!
 
 ### Useful resources
 
